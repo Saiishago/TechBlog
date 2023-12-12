@@ -1,0 +1,17 @@
+<main class="container">
+    <div class="row">
+        <div class="col-10">
+            <h2>Dash</h2>
+            <a href="/newpost" class="button-p">New Blog Post</a>
+        </div>
+    </div><br>
+    <h2>Something here</h2>
+    {{#each posts}}
+    <section class="container-p">
+        <h2><a href="/post/{{id}}">{{title}}</a></h2>
+        <p>Date: {{format-date createdAt}} | Written/Made by: {{user.username}}</p>
+        <a href="/editpost/{{id}}" class="button-w">Edit Post</a>
+        <button class="button-d delete-post" data-post-id="{{id}}">Bye!</button>
+    </section>
+    {{/each}}
+</main>
