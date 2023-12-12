@@ -1,0 +1,16 @@
+<main class="container">
+    <h2>Edit Post</h2>
+    <form class="update-p-form">
+       <section>
+        <label for="title-update-p" class="form-label">Title</label>
+        <input class="form-control" id="title-update-p" type="text" value="{{title}}" placeholder="Post Title"/>
+       </section>
+
+       <section>
+        <label for="content-update-p" class="form-label">Content</label>
+        <textarea class="form-control" id="content-update-p" rows="4" placeholder="Post Content">{{content}}</textarea>
+       </section>
+       <button class="button-p" id="update-p" type="submit">Post Update</button>
+       <button class="button-d" id="delete-p" type="button">Erase Post</button>
+    </form>
+</main>
