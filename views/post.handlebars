@@ -1,0 +1,23 @@
+<main class="container">
+    <article>
+        <h2>{{title}}</h2>
+        <p>Date: {{format-date createdAt}} | Written/Made by: {{user.username}}</p>
+        <p>{{content}}</p>
+    </article>
+    {{#if logged-in}}
+    <form class="new-comment-form">
+        <section>
+            <label for="comments" class="form-label">Comment:</label>
+            <textarea class="form-control" id="content-new-comment" rows="2" placeholder="your comment"></textarea>
+        </section>
+        <button class="button-p" type="submit">Comment</button>
+    </form>
+    {{/if}}
+    <h3>Previous Comments:</h3>
+    {{#each comments}}
+    <div class="comments">
+        <p>{{comment-text}}</p>
+        <p>Made on {{format-date createdAt}} by {{user.username}}</p>
+    </div>
+    {{/each}}
+</main>
