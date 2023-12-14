@@ -9,7 +9,7 @@
     {{#each posts}}
     <section class="container-p">
         <h2><a href="/post/{{id}}">{{title}}</a></h2>
-        <p>Date: {{format-date createdAt}} | Written/Made by: {{user.username}}</p>
+        <p>Date: {{format_date createdAt}} | Written/Made by: {{user.username}}</p>
         <a href="/editpost/{{id}}" class="button-w">Edit Post</a>
         <button class="button-d delete-post" data-post-id="{{id}}">Bye!</button>
     </section>

@@ -1,7 +1,7 @@
 <main class="container">
     <article>
         <h2>{{title}}</h2>
-        <p>Date: {{format-date createdAt}} | Written/Made by: {{user.username}}</p>
+        <p>Date: {{format_date createdAt}} | Written/Made by: {{user.username}}</p>
         <p>{{content}}</p>
     </article>
     {{#if logged-in}}
@@ -17,7 +17,7 @@
     {{#each comments}}
     <div class="comments">
         <p>{{comment-text}}</p>
-        <p>Made on {{format-date createdAt}} by {{user.username}}</p>
+        <p>Made on {{format_date createdAt}} by {{user.username}}</p>
     </div>
     {{/each}}
 </main>
