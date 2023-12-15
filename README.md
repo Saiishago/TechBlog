@@ -13,6 +13,7 @@ This week's challenge is to build a CMS-style Blog site similar to a Wordpress S
 ### Deployed Heroku Link;
 
 ### Github repository Link;
+[Salome's Github Repo](https://github.com/Saiishago/TechBlog)
 
 ## Packages Installed
 
