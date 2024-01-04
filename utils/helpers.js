@@ -1,10 +1,14 @@
 module.exports = {
     format_date: (date) => {
-        const dates = new Date(date);
+        const currentDate = new Date(date);
         const formatDate = `${date.getMonth() +1}/${date.getDate()}/${date.getFullYear()}`;
-        const hour = date.getHour().toString().padStart(2, '0');
-        const minute = date.getMinute().toString().padStart(2, '0');
-        const formatTime = `${hour}:${minute}`;
-        return `${formateDate} at ${formatTime}`;
+        const currentHour = currentDate.getHours().toString().padStart(2, '0');
+        const currentMinutes = currentDate.getMinutes().toString().padStart(2, '0');
+        const formatTime = `${currentHour}:${currentMinutes}`;
+        return `${formatDate} at ${formatTime}`;
     },
 };
+// var currentDate = new Date();
+// var currentHour = currentDate.getHours();
+
+//console.log(hour);
