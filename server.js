@@ -19,6 +19,11 @@ const sess = {
         db: sequelize,
     }),
 };
+
+// app.get('/css/style.css', function(req, res) {
+//     res.setHeader('Content-Type', 'text/css');
+// });
+  
 app.use(session(sess))
 
 app.use(express.json());

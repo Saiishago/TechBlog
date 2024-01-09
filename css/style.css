@@ -1,5 +1,5 @@
 body {
-    background-image: url('/images/techBlogBG.jpeg');
+    background-image: url('./images/techBlogBG.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
