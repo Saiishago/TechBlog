@@ -37,13 +37,3 @@ app.use(routes);
 sequelize.sync({force: false}).then(() => {
     app.listen(PORT, () => console.log(`Listening to PORT ${PORT}`));
 });
-
-// Rest of your server.js code...
-
-// Make sure you have defined the `helpers` variable before using it in the exphbs.create method.
-// For example:
-// const helpers = {
-  
-// };
-
-// Your server.js code continues...

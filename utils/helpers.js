@@ -8,7 +8,3 @@ module.exports = {
         return `${formatDate} at ${formatTime}`;
     },
 };
-// var currentDate = new Date();
-// var currentHour = currentDate.getHours();
-
-//console.log(hour);

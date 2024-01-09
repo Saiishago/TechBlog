@@ -2,12 +2,6 @@
 
 This week's challenge is to build a CMS-style Blog site similar to a Wordpress Site. The site will give Developers the chance and space to publish their blog posts and comment on other posts.
 
-## 411
-
-- Use handlebars.js
-- Sequelize as the ORM
-- Express-session npm package
-
 ## Links
 
 ### Deployed Heroku Link;
