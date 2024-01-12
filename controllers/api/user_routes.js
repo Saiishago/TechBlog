@@ -31,14 +31,18 @@ router.post("/signup", async(req,res) => {
 });
 
 router.post("/login", async(req,res) => {
+    console.log('hello');
     try {
         const userD = await User.findOne({where: {username: req.body.username}});
         if(!userD){
+            console.log('change name');
             res.status(400).json({message: "Wrong username/password, try again!"});
             return;
         }
-        const correctPassword = await userD.checkPassword(req.body.password);
-        if(!correctPassword){
+        const validPassword = await userD.checkPassword(req.body.password);
+        console.log(validPassword);
+        if(!validPassword){
+            console.log('change');
             res.status(400).json({message: "Wrong email/passwaord, try again!"});
             return;
         }
@@ -48,7 +52,8 @@ router.post("/login", async(req,res) => {
             res.status(200).json({user: userD, message: "Logged In!"});
         });
     } catch (err) {
-        res.status(400).json(err);
+        console.log(err);
+        res.status(500).json(err);
     }
 });
 
